@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> jobinja | جاب اینجا </title>
+    <link rel="stylesheet" href="dist/main.css">
 </head>
+
 <body>
-    
+    <div class="header-2">
+
+        <nav class="bg-white py-2 md:py-4">
+          <div class="container px-4 mx-auto md:flex md:items-center">
+      
+            <div class="flex justify-between items-center">
+                <div class="flex mr-4">
+                    <img src="https://logoyab.com/wp-content/uploads/2024/07/Jobinja-Logo-1030x1030.png" class="mr-3 h-24  rounded-xl " alt="jobinja logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap">jobinja</span>
+                </div>
+              <button class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden" id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+
+            <form action="#" method="GET" class="hidden lg:block lg:pl-2">
+                <label for="topbar-search" class="sr-only">جستوجو</label>
+                <div class="relative mt-1 lg:w-96">
+                  <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none ">
+                      <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20"> <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/> </svg>
+                  </div>
+                  <input type="text" name="email" id="topbar-search" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full pl-9 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder=" ... مهارت خود را وارد کنید ">
+                </div>
+             </form>
+
+            <div class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0" id="navbar-collapse">
+
+
+
+              <a href="#" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">شرکت های برتر</a>
+              <a href="#" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">رزومه ساز</a>
+              <a href="#" class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">مشاغل</a>
+              <a href="#" class="p-2 lg:px-4 md:mx-2 text-white rounded bg-indigo-600">خانه</a>
+              <a href="#" class="cursor-pointer p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300">ورود</a>
+              <a href="#" class=" cursor-pointer p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1">ثبت نام</a>
+            
+            
+            </div>
+          </div>
+        </nav>
+      <hr class="to-black">
+      
+
+    <script src="js/header.js"></script>
 </body>
+
 </html>
