@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: Samimfont;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -444,6 +444,18 @@ video {
 
 [hidden] {
   display: none;
+}
+
+@font-face {
+  font-family: 'Samimfont';
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: swap;
+
+  src: url('/fonts/Samim.ttf') format('truetype');
 }
 
 *, ::before, ::after {
