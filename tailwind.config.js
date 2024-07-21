@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Samimfont']
+        sans: ['Samimfont', 'SamimBooldfont'],
+        bold: ['SamimBooldfont'],
       },
     },
   },

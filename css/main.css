@@ -11,3 +11,15 @@
     src: url('/fonts/Samim.ttf') format('truetype');
   }
 }
+
+@layer base {
+    @font-face {
+      font-family: 'SamimBooldfont';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url('/fonts/Samim-Bold.ttf') format('truetype');
+    }
+  }
+
+  
