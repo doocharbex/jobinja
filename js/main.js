@@ -1,10 +1,11 @@
 import { companySection } from './company.js';
-
+import { renderEmploymentNotice } from './EmploymentNotice/EmploymentNotice.js';
 
 // <-- Function Controller -->
 function __init__ (){
     // <-- Sections "Function" -->
     companySection()
+    renderEmploymentNotice()
 }
 
 // <-- Runer Setting if  " DOMContent " Loaded --> 
