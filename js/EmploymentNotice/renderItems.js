@@ -21,7 +21,7 @@ export function renderItems(page, itemsPerPage, items) {
       const item = document.createElement('div');
       item.className = '';
       item.innerHTML = `
-        <div class="flex items-center border-t pt-4">
+        <div class="flex items-center border-t pt-4" dir="rtl">
           <div class="w-1/6 flex justify-center">
             <img src="${items[i].imgSrc}" alt="Company Logo">
           </div>
