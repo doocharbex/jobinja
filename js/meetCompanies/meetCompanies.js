@@ -46,6 +46,7 @@ function buttonSliderMeetCompanies() {
   };
 }
 
+// <-- Auto Scroll Items Companies   -->
 function autoScrollMeetCompanies() {
   const scrollContainerMeetCompanies = document.getElementById('scrollContainerMeetCompanies');
   let scrollAmount = 0;
