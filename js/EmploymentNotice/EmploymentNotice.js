@@ -8,7 +8,7 @@ let items = [];
 export async function renderEmploymentNotice() {
   try {
     // <-- Enter the correct path to the JSON file -->
-    const response = await fetch('js/json/data.json'); 
+    const response = await fetch('js/json/dataEmploymentNotice.json'); 
 
     // <-- Get the JSON data as a JavaScript object -->
     items = await response.json(); 
