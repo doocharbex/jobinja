@@ -30,13 +30,19 @@ async function renderMeetCompanies() {
 // <-- Control Button Lef and Right   -->
 function buttonSliderMeetCompanies() {
   const scrollRightCompanies = document.getElementById('scrollRightCompanies');
+  const scrollLeftCompanies = document.getElementById('scrollLeftCompanies');
 
-  scrollRight.onclick = function () {
-    scrollContainerMeetCompanies.scrollLeft += 20;
+  if (!scrollRightCompanies || !scrollLeftCompanies) {
+    console.error('عناصر اسکرول یافت نشدند.');
+    return;
+  }
+
+  scrollRightCompanies.onclick = function () {
+    document.getElementById('scrollContainerMeetCompanies').scrollLeft += 20;
   };
 
-  scrollLeft.onclick = function () {
-    scrollContainerMeetCompanies.scrollLeft -= 20;
+  scrollLeftCompanies.onclick = function () {
+    document.getElementById('scrollContainerMeetCompanies').scrollLeft -= 20;
   };
 }
 
