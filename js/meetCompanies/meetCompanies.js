@@ -4,28 +4,32 @@ const itemsPerPage = 3;
 let currentPage = 1;
 let items = [];
 
-export async function renderMeetCompanies() {
+document.addEventListener('DOMContentLoaded', (event) => {
+  meetCompaniesSection();
+});
+
+export function meetCompaniesSection() {
+  buttonSliderMeetCompanies();
+  autoScrollMeetCompanies();
+  renderMeetCompanies();
+}
+
+// <-- Send Request Json File  -->
+async function renderMeetCompanies() {
   try {
     const response = await fetch('js/json/datameetCompanies.json');
     items = await response.json();
 
+    // <-- Send Parameters To Render Items  -->
     renderItems(currentPage, itemsPerPage, items);
-
-
   } catch (error) {
     console.error('خطا در بارگذاری داده‌ها:', error);
   }
 }
 
-function meetCompaniesSection() {
-  buttonSliderMeetCompanies();
-  autoScrollMeetCompanies();
-}
-
+// <-- Control Button Lef and Right   -->
 function buttonSliderMeetCompanies() {
-  const scrollRight = document.getElementById('scrollRightCompanies');
-  const scrollLeft = document.getElementById('scrollLeftCompanies');
-  const scrollContainerMeetCompanies = document.getElementById('scrollContainerMeetCompanies');
+  const scrollRightCompanies = document.getElementById('scrollRightCompanies');
 
   scrollRight.onclick = function () {
     scrollContainerMeetCompanies.scrollLeft += 20;

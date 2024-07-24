@@ -1,13 +1,13 @@
 import { companySection } from './company.js';
 import { renderEmploymentNotice } from './EmploymentNotice/EmploymentNotice.js';
-import { renderMeetCompanies } from './meetCompanies/meetCompanies.js';
+import { meetCompaniesSection } from './meetCompanies/meetCompanies.js';
 
 // <-- Function Controller -->
 function __init__ (){
     // <-- Sections "Function" -->
     companySection()
     renderEmploymentNotice()
-    renderMeetCompanies()
+    meetCompaniesSection()
     
 }
 
