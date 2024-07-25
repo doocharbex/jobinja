@@ -1,6 +1,7 @@
 import { companySection } from './company.js';
 import { renderEmploymentNotice } from './EmploymentNotice/EmploymentNotice.js';
 import { meetCompaniesSection } from './meetCompanies/meetCompanies.js';
+import { BlogSection } from './blog/blog.js';
 
 // <-- Function Controller -->
 function __init__ (){
@@ -8,6 +9,7 @@ function __init__ (){
     companySection()
     renderEmploymentNotice()
     meetCompaniesSection()
+    BlogSection()
     
 }
 
