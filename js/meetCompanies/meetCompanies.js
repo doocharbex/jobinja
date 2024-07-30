@@ -4,9 +4,6 @@ const itemsPerPage = 3;
 let currentPage = 1;
 let items = [];
 
-document.addEventListener('DOMContentLoaded', (event) => {
-  meetCompaniesSection();
-});
 
 export function meetCompaniesSection() {
   buttonSliderMeetCompanies();
