@@ -27,11 +27,35 @@ export function renderItems(page, itemsPerPage, items) {
           </div>
           <div class="w-5/6">
             <h4 class="text-lg font-semibold">${items[i].title}</h4>
-            <p class="text-gray-600">${items[i].company} | ${items[i].location}</p>
-            <p class="text-gray-600">قرارداد: ${items[i].contract}</p>
+          <p class="text-gray-600 flex items-center">
+            <i class="fas fa-building mr-2 text-gray-500"></i>
+               ${items[i].company}
+          </p>
+
+          <p class="text-gray-600 flex items-center">
+            <i class="fas fa-map-marker-alt mr-2 text-gray-500"></i> 
+            منطقه ${items[i].location}
+          </p>
+
+          <p class="text-gray-600 flex items-center">
+            <i class="fas fa-calendar-alt mr-2 text-gray-500"></i> 
+              قرارداد: ${items[i].contract}
+          </p>
           </div>
         </div>
-        <button class="mt-4 bg-green-500 text-white px-4 py-2 rounded-md">ارسال رزومه</button>
+
+        <button class="bg-green-500 text-white px-4 py-2 rounded-full shadow-md hover:bg-green-600 transition-colors mr-4">
+          ارسال رزومه
+        </button>
+
+        <div class="pt-3">
+        <button class="flex items-center px-4 py-2 bg-blue-500 text-white rounded-full shadow-md hover:bg-blue-600 transition-colors ">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 9.878a4.5 4.5 0 016.364 0L12 11.618l.515-.515a4.5 4.5 0 016.364 6.364L12 21.364l-6.878-6.878a4.5 4.5 0 010-6.364z"></path>
+          </svg>
+          <span>علاقه‌مندی</span>
+        </button>
+        </div>
       `;
       itemContainer.appendChild(item);
     }
